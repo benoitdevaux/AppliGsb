@@ -1,0 +1,17 @@
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.csprojAssemblyReference.cache
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.Properties.Resources.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.csproj.GenerateResource.cache
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.csproj.CoreCompileInputs.cache
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmAccueil.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\bin\Debug\gsb.exe.config
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\bin\Debug\gsb.exe
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\bin\Debug\gsb.pdb
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.exe
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.pdb
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmMedicament.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmMedecin.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmNouveauMedicament.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmNouveauMedecin.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmRapport.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmAjoutRapport.resources
+D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmStatistiques.resources
