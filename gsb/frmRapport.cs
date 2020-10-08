@@ -81,12 +81,26 @@ namespace gsb
             String idStr = this.listRapports.Text;
 
             //récupération de l'id du rapport
-            int idRapport = Int32.Parse(this.listRapports.Text);
+            int idRapport = int.Parse(this.listRapports.Text);
 
             //on utilise le manager pour récupérer le rapport
             Rapport rapport = Manager.ChargerRapport(idRapport);
 
             //affichage des infos
+            //nom visiteur 
+            this.txtNomVisiteur.Text = rapport.GetVisiteur().getNom();
+
+            //prenom visiteur
+            this.txtPrenomVisiteur.Text = rapport.GetVisiteur().getPrenom();
+
+            //nom medecin
+            this.txtNomMedecin.Text = rapport.GetMedecin().getNom();
+
+            //prenom medecin
+            this.txtPrenomMedecin.Text = rapport.GetMedecin().getPrenom();
+
+            //adresse medecin
+            this.txtAdresseMedecin.Text = rapport.GetMedecin().getAdresse();
             //motif
             this.txtMotif.Text = rapport.GetMotif();
 

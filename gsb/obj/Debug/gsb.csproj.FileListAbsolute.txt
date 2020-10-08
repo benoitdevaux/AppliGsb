@@ -15,3 +15,20 @@ D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB 
 D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmRapport.resources
 D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmAjoutRapport.resources
 D:\Dossier\Cours\SLAM\SLAM 4\2 - Découverte C# et Visual Studio\3 - Projet GSB - Appli-CR\projet_gsb_Csharp\gsb\obj\Debug\gsb.frmStatistiques.resources
+D:\laragon\www\AppliGsb\gsb\bin\Debug\gsb.exe.config
+D:\laragon\www\AppliGsb\gsb\bin\Debug\gsb.exe
+D:\laragon\www\AppliGsb\gsb\bin\Debug\gsb.pdb
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.csprojAssemblyReference.cache
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmAjoutRapport.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmMedecin.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmMedicament.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmAccueil.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmNouveauMedecin.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmNouveauMedicament.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmRapport.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmStatistiques.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.Properties.Resources.resources
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.csproj.GenerateResource.cache
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.csproj.CoreCompileInputs.cache
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.exe
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.pdb
