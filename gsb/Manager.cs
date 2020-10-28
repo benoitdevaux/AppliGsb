@@ -16,6 +16,7 @@ namespace gsb
         private static List<Specialite> specialites;
         private static List<Visiteur> visiteurs;
         private static List<Rapport> rapports;
+        private static List<EchantillonOffert> echantillons;
         
 
         // constructeur du manager
@@ -107,7 +108,12 @@ namespace gsb
         }
 
         //Récupère un médicament à partir de son index
-        public static Medicament GetMedicament(int index)
+        public static Medicament GetMedicamentById(String id)
+        {
+            return Passerelle.getMedicament(id);
+        }
+
+        public static Medicament getMedicament(int index)
         {
             return medicaments[index];
         }
@@ -183,6 +189,19 @@ namespace gsb
             return Passerelle.GetRapportByYear();
         }
 
+        public static int getRapportId(Rapport unRapport)
+        {
+            return Passerelle.getIdRapport(unRapport);
+        }
+
+        public static EchantillonOffert GetEchantillonOffert(int index)
+        {
+            return echantillons[index];
+        }
+        public static void CreerEchantillonOffert(int idRapport, EchantillonOffert unEchantillon)
+        {
+            Passerelle.InsererEchantillonOffert(idRapport, unEchantillon);
+        }
 
 
     }   
