@@ -31,33 +31,7 @@ namespace gsb
             }
         }
 
-        //Récupère 
-        public static Medicament GetMedicament(string idMedicament)
-        {
-            Medicament medicament = null;
-
-            DbCommand dbc = GetConnexion().CreateCommand();
-            dbc.CommandText = "SELECT * FROM medicament WHERE id = '" + idMedicament + "'";
-            DbDataReader reader = dbc.ExecuteReader();
-
-            if (reader.Read())
-            {
-                string id, nomCommercial, composition, effets, contreIndications;
-
-                //Récupération des informations du medicament 
-                id = (string)reader["id"];
-                nomCommercial = (string)reader["nomCommercial"];
-                composition = (string)reader["composition"];
-                effets = (string)reader["effets"];
-                contreIndications = (string)reader["contreIndications"];
-
-                //instanciation du médicament
-                medicament = new Medicament(id, nomCommercial, composition, effets, contreIndications);
-            }
-            reader.Close();
-            return medicament;
-        }
-
+        //Récupère les médicaments
         public static List<Medicament> GetMedicament()
         {
             //liste de médicaments
@@ -78,6 +52,7 @@ namespace gsb
             return liste;
         }
 
+        //Récupère les medecins
         public static List<Medecin> GetMedecins()
         {
             //liste des medecins 
@@ -98,6 +73,7 @@ namespace gsb
             return liste;
         }
 
+        //Récupère les visiteurs
         public static List<Visiteur> GetVisiteurs()
         {
             //liste des visiteurs
@@ -409,6 +385,7 @@ namespace gsb
             return liste;
         }
 
+        //Récupère les échantillins offert d'un rapport
         public static List<EchantillonOffert> GetEchantillonOfferts(int idRapport)
         {
             //liste des echantillons
@@ -475,6 +452,7 @@ namespace gsb
             dbc.ExecuteNonQuery();
         }
 
+        //Ajouter un rapport
         public static void InsererRapport(Rapport rapport)
         {
             DbCommand dbc = GetConnexion().CreateCommand();
@@ -497,8 +475,7 @@ namespace gsb
             dbc.ExecuteNonQuery();
         }
 
-
-
+        //Récupère le nombre de rapport par ans
         public static List<List<String>> GetRapportByYear()
         {
             DbCommand dbc = GetConnexion().CreateCommand();
