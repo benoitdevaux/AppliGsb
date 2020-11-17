@@ -390,6 +390,7 @@ namespace gsb
             reader.Close();
             return liste;
         }
+
         public static List<Specialite> GetSpecialites()
         {
             List<Specialite> liste = new List<Specialite>();
@@ -445,7 +446,7 @@ namespace gsb
 
             //construction de la requête SQL insert
             dbc.CommandText = "INSERT INTO medicament VALUES ( "
-                + "'" + medicament.getId() + "',"
+                + "'" + medicament.getId().ToUpper() + "',"
                 + "'" + medicament.getNom() + "',"
                 + "'" + medicament.getFamille().getId() + "',"
                 + "'" + medicament.getComposition() + "',"

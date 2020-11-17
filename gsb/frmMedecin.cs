@@ -43,6 +43,7 @@ namespace gsb
             this.txtNomMed.Text = med.getNom();
             this.txtPrenomMed.Text = med.getPrenom();
             this.txtAdresseMed.Text = med.getAdresse();
+            this.txtDepMed.Text = med.getDepartement().ToString();
             this.txtTelMed.Text = med.getTel();
             
 
