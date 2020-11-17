@@ -43,7 +43,7 @@ namespace gsb
             foreach (Medicament medicament in lesMedicaments)
             {
                 //ajouter chaque médicaments aux items de la liste cbMedicament
-                this.cbMedicament.Items.Add(medicament.toString());
+                this.cbMedicament.Items.Add(medicament.getNom());
             }
         }
 
@@ -66,17 +66,43 @@ namespace gsb
         private void btCreer_Click(object sender, EventArgs e)
         {
             //Récupération du visiteur, medecin
-            Visiteur visiteur = Manager.GetVisiteur(this.cbVisiteurs.SelectedIndex);
-            Medecin medecin = Manager.getMedecin(this.cbMedecins.SelectedIndex);
-
+            string visiteur = Manager.GetVisiteur(this.cbVisiteurs.SelectedIndex).getId();
+            int medecin = Int32.Parse(Manager.getMedecin(this.cbMedecins.SelectedIndex).getId());
 
             //Récupération des valeurs des champs et instanciation d'un rapport
-            Rapport nouveauRapport = new Rapport(DateTime.Parse(txtDate.Text), txtMotif.Text, txtBilan.Text, visiteur.getId(), Int32.Parse(medecin.getId()));
+            Rapport nouveauRapport = new Rapport(0, DateTime.Parse(txtDate.Text), txtMotif.Text, txtBilan.Text, visiteur, medecin);        
 
             //Création de l'élément grâce au manager
             Manager.CreerRapport(nouveauRapport);
 
+            //Récupération de l'id du nouveau rapport
+            int idRapport = Manager.getRapportId(nouveauRapport);
+
+            //Parcours la liste lvMedicament
+            for (int i = 0; i < lvMedicament.Items.Count; i++)
+            {
+                //Récupère l'id du médicament correspondant à l'Item[i]
+                string nomMedicament = lvMedicament.Items[i].Text;
+
+                //Récupère le médicament
+                Medicament medicament = Manager.GetMedicamentById(nomMedicament);
+
+                //Récupère la quantite item[i]
+                string quantite = lvMedicament.Items[i].SubItems[1].Text;
+
+                //Récupère les valeurs et instancie un echantillon
+                EchantillonOffert nouvelEchantillon = new EchantillonOffert(medicament, int.Parse(quantite));
+
+                //Ajoute l'échantillon à la bdd
+                Manager.CreerEchantillonOffert(idRapport, nouvelEchantillon);
+            }
+
             MessageBox.Show("Le rapport du " + txtDate.Text + " a bien été créé");
+        }
+
+        private void lvMedicament_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

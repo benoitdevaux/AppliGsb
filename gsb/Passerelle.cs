@@ -31,33 +31,7 @@ namespace gsb
             }
         }
 
-        //Récupère 
-        public static Medicament GetMedicament(string idMedicament)
-        {
-            Medicament medicament = null;
-
-            DbCommand dbc = GetConnexion().CreateCommand();
-            dbc.CommandText = "SELECT * FROM medicament WHERE id = '" + idMedicament + "'";
-            DbDataReader reader = dbc.ExecuteReader();
-
-            if (reader.Read())
-            {
-                string id, nomCommercial, composition, effets, contreIndications;
-
-                //Récupération des informations du medicament 
-                id = (string)reader["id"];
-                nomCommercial = (string)reader["nomCommercial"];
-                composition = (string)reader["composition"];
-                effets = (string)reader["effets"];
-                contreIndications = (string)reader["contreIndications"];
-
-                //instanciation du médicament
-                medicament = new Medicament(id, nomCommercial, composition, effets, contreIndications);
-            }
-            reader.Close();
-            return medicament;
-        }
-
+        //Récupère les médicaments
         public static List<Medicament> GetMedicament()
         {
             //liste de médicaments
@@ -78,6 +52,7 @@ namespace gsb
             return liste;
         }
 
+        //Récupère les medecins
         public static List<Medecin> GetMedecins()
         {
             //liste des medecins 
@@ -98,6 +73,7 @@ namespace gsb
             return liste;
         }
 
+        //Récupère les visiteurs
         public static List<Visiteur> GetVisiteurs()
         {
             //liste des visiteurs
@@ -209,6 +185,22 @@ namespace gsb
             reader.Close();
             return medecin;
         }
+
+        public static Medicament getMedicament(string nomMedicament)
+        {
+            Medicament medicament = null;
+
+            DbCommand dbc = GetConnexion().CreateCommand();
+            dbc.CommandText = "SELECT * FROM medicament WHERE medicament.nomCommercial = '" + nomMedicament + "'";
+            DbDataReader reader = dbc.ExecuteReader();
+
+            if (reader.Read())
+            {
+                medicament = MapperLigneMedicament(reader);
+            }
+            reader.Close();
+            return medicament;
+        }
         
         ///<summary>
         ///Crée un médicament à partir d'une ligne de résultat du jeu d'enregistrements
@@ -257,6 +249,40 @@ namespace gsb
             return liste;
         }
 
+        public static int getIdRapport(Rapport rapport)
+        {
+            Rapport leRapport = null;
+            
+            //Récupération de la date
+            int annee = rapport.GetDate().Year;
+            int mois = rapport.GetDate().Month;
+            int jour = rapport.GetDate().Day;
+
+            //Mise en forme de la nouvelle date
+            string date = annee + "-" + mois + "-" + jour;
+
+            //Création d'une nouvelle commande
+            DbCommand dbc = GetConnexion().CreateCommand();
+
+            //Construction de la requête SQL
+            dbc.CommandText = "SELECT * FROM rapport WHERE date = '" + date + "' " +
+                "AND idVisiteur = '" + rapport.GetIdVisiteur() + "' AND idMedecin = '" +
+                rapport.GetIdMedecin()+ "'";
+
+            //Execution de la requête 
+            DbDataReader reader = dbc.ExecuteReader();
+
+            if(reader.Read())
+            {
+                leRapport = MapperLigneRapport(reader);
+            }
+
+            //Fermer le reader
+            reader.Close();
+
+            //retourne l'id rapport
+            return leRapport.GetId();
+        }
 
         private static Medicament MapperLigneMedicament(DbDataReader reader)
         {
@@ -339,15 +365,16 @@ namespace gsb
         {
             DateTime date;
             string motif, bilan, idVisiteur;
-            int idMedecin;
+            int idMedecin, id;
 
+            id = (int)reader["id"];
             date = (DateTime)reader["date"];
             motif = (string)reader["motif"];
             bilan = (string)reader["bilan"];
             idVisiteur = (string)reader["idVisiteur"];
             idMedecin = (int)reader["idMedecin"];
 
-            Rapport rapport = new Rapport(date, motif, bilan, idVisiteur, idMedecin);
+            Rapport rapport = new Rapport(id, date, motif, bilan, idVisiteur, idMedecin);
             return rapport;
         }
 
@@ -410,6 +437,7 @@ namespace gsb
             return liste;
         }
 
+        //Récupère les échantillins offert d'un rapport
         public static List<EchantillonOffert> GetEchantillonOfferts(int idRapport)
         {
             //liste des echantillons
@@ -476,6 +504,7 @@ namespace gsb
             dbc.ExecuteNonQuery();
         }
 
+        //Ajouter un rapport
         public static void InsererRapport(Rapport rapport)
         {
             DbCommand dbc = GetConnexion().CreateCommand();
@@ -498,8 +527,20 @@ namespace gsb
             dbc.ExecuteNonQuery();
         }
 
+        public static void InsererEchantillonOffert(int idRapport, EchantillonOffert unEchantillon) 
+        {
+            DbCommand dbc = GetConnexion().CreateCommand();
 
+            dbc.CommandText = "INSERT INTO offrir(idRapport, idMedicament, quantite) VALUES ( "
+                + "'" + idRapport + "',"
+                + "'" + unEchantillon.GetMedicament().getId() + "',"
+                + "'" + unEchantillon.GetQuantite() + "'"
+                + " )";
 
+            dbc.ExecuteNonQuery();
+         }
+
+        //Récupère le nombre de rapport par ans
         public static List<List<String>> GetRapportByYear()
         {
             DbCommand dbc = GetConnexion().CreateCommand();
