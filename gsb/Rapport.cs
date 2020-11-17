@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
@@ -21,8 +22,9 @@ namespace gsb
         private Medecin leMedecin;
         private List<EchantillonOffert> lesEchantillonOfferts;
 
-        public Rapport(DateTime date, string motif, string bilan, string idVisiteur, int idMedecin)
+        public Rapport(int unId, DateTime date, string motif, string bilan, string idVisiteur, int idMedecin)
         {
+            this.id = unId;
             this.date = date;
             this.motif = motif;
             this.bilan = bilan;
@@ -30,8 +32,9 @@ namespace gsb
             this.idMedecin = idMedecin;
         }
 
-        public Rapport(DateTime date, string motif, string bilan, Visiteur visiteur, Medecin medecin)
+        public Rapport(int unId, DateTime date, string motif, string bilan, Visiteur visiteur, Medecin medecin)
         {
+            this.id = unId;
             this.date = date;
             this.motif = motif;
             this.bilan = bilan;

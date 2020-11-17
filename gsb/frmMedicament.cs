@@ -42,7 +42,7 @@ namespace gsb
             int indexMed = this.listMedicaments.SelectedIndex;
 
             //récupération du médicament  dans la classe manager
-            Medicament med = Manager.GetMedicament(indexMed);
+            Medicament med = Manager.getMedicament(indexMed);
 
             //mise à jour des champs de texte
             this.txtId.Text = med.getId();
