@@ -110,5 +110,14 @@ namespace gsb
             f.MdiParent = this;
             f.Show();
         }
+
+        private void listeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FermerMDI();
+            RendVisible(false);
+            frmVisiteur f = new frmVisiteur();
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }

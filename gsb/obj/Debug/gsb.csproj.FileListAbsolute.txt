@@ -32,3 +32,4 @@ D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.csproj.GenerateResource.cache
 D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.csproj.CoreCompileInputs.cache
 D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.exe
 D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.pdb
+D:\laragon\www\AppliGsb\gsb\obj\Debug\gsb.frmVisiteur.resources
