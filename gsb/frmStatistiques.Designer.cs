@@ -51,6 +51,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -69,16 +70,18 @@
             this.splitContainer1.Panel2.Controls.Add(this.lbMedicaments);
             this.splitContainer1.Panel2.Controls.Add(this.lbMedecin);
             this.splitContainer1.Panel2.Controls.Add(this.lbRapportAnnee);
-            this.splitContainer1.Size = new System.Drawing.Size(628, 536);
-            this.splitContainer1.SplitterDistance = 84;
+            this.splitContainer1.Size = new System.Drawing.Size(471, 436);
+            this.splitContainer1.SplitterDistance = 68;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
             // lbStatistique
             // 
             this.lbStatistique.AutoSize = true;
-            this.lbStatistique.Location = new System.Drawing.Point(279, 37);
+            this.lbStatistique.Location = new System.Drawing.Point(209, 30);
+            this.lbStatistique.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbStatistique.Name = "lbStatistique";
-            this.lbStatistique.Size = new System.Drawing.Size(74, 17);
+            this.lbStatistique.Size = new System.Drawing.Size(56, 13);
             this.lbStatistique.TabIndex = 0;
             this.lbStatistique.Text = "Statistique";
             // 
@@ -88,10 +91,11 @@
             this.colAnnee,
             this.colRapports});
             this.lvRapports.HideSelection = false;
-            this.lvRapports.Location = new System.Drawing.Point(21, 51);
+            this.lvRapports.Location = new System.Drawing.Point(16, 41);
+            this.lvRapports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvRapports.Name = "lvRapports";
             this.lvRapports.Scrollable = false;
-            this.lvRapports.Size = new System.Drawing.Size(282, 290);
+            this.lvRapports.Size = new System.Drawing.Size(212, 236);
             this.lvRapports.TabIndex = 11;
             this.lvRapports.UseCompatibleStateImageBehavior = false;
             this.lvRapports.View = System.Windows.Forms.View.Details;
@@ -100,7 +104,7 @@
             // colAnnee
             // 
             this.colAnnee.Text = "Année";
-            this.colAnnee.Width = 205;
+            this.colAnnee.Width = 111;
             // 
             // colRapports
             // 
@@ -109,9 +113,10 @@
             // 
             // btActualiser
             // 
-            this.btActualiser.Location = new System.Drawing.Point(510, 392);
+            this.btActualiser.Location = new System.Drawing.Point(382, 318);
+            this.btActualiser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btActualiser.Name = "btActualiser";
-            this.btActualiser.Size = new System.Drawing.Size(88, 29);
+            this.btActualiser.Size = new System.Drawing.Size(66, 24);
             this.btActualiser.TabIndex = 8;
             this.btActualiser.Text = "Actualiser";
             this.btActualiser.UseVisualStyleBackColor = true;
@@ -120,70 +125,78 @@
             // txtMedicament
             // 
             this.txtMedicament.Enabled = false;
-            this.txtMedicament.Location = new System.Drawing.Point(392, 163);
+            this.txtMedicament.Location = new System.Drawing.Point(294, 132);
+            this.txtMedicament.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMedicament.Name = "txtMedicament";
-            this.txtMedicament.Size = new System.Drawing.Size(100, 22);
+            this.txtMedicament.Size = new System.Drawing.Size(76, 20);
             this.txtMedicament.TabIndex = 7;
             // 
             // txtMedecin
             // 
             this.txtMedecin.Enabled = false;
-            this.txtMedecin.Location = new System.Drawing.Point(392, 81);
+            this.txtMedecin.Location = new System.Drawing.Point(294, 66);
+            this.txtMedecin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMedecin.Name = "txtMedecin";
-            this.txtMedecin.Size = new System.Drawing.Size(100, 22);
+            this.txtMedecin.Size = new System.Drawing.Size(76, 20);
             this.txtMedecin.TabIndex = 6;
             // 
             // txtRapport
             // 
             this.txtRapport.Enabled = false;
-            this.txtRapport.Location = new System.Drawing.Point(15, 399);
+            this.txtRapport.Location = new System.Drawing.Point(11, 324);
+            this.txtRapport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRapport.Name = "txtRapport";
-            this.txtRapport.Size = new System.Drawing.Size(100, 22);
+            this.txtRapport.Size = new System.Drawing.Size(76, 20);
             this.txtRapport.TabIndex = 5;
             // 
             // lbRapport
             // 
             this.lbRapport.AutoSize = true;
-            this.lbRapport.Location = new System.Drawing.Point(12, 369);
+            this.lbRapport.Location = new System.Drawing.Point(9, 300);
+            this.lbRapport.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbRapport.Name = "lbRapport";
-            this.lbRapport.Size = new System.Drawing.Size(135, 17);
+            this.lbRapport.Size = new System.Drawing.Size(100, 13);
             this.lbRapport.TabIndex = 4;
             this.lbRapport.Text = "Nombre de rapports";
             // 
             // lbMedicaments
             // 
             this.lbMedicaments.AutoSize = true;
-            this.lbMedicaments.Location = new System.Drawing.Point(389, 129);
+            this.lbMedicaments.Location = new System.Drawing.Point(292, 105);
+            this.lbMedicaments.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMedicaments.Name = "lbMedicaments";
-            this.lbMedicaments.Size = new System.Drawing.Size(165, 17);
+            this.lbMedicaments.Size = new System.Drawing.Size(124, 13);
             this.lbMedicaments.TabIndex = 3;
             this.lbMedicaments.Text = "Nombre de médicaments";
             // 
             // lbMedecin
             // 
             this.lbMedecin.AutoSize = true;
-            this.lbMedecin.Location = new System.Drawing.Point(389, 51);
+            this.lbMedecin.Location = new System.Drawing.Point(292, 41);
+            this.lbMedecin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMedecin.Name = "lbMedecin";
-            this.lbMedecin.Size = new System.Drawing.Size(142, 17);
+            this.lbMedecin.Size = new System.Drawing.Size(107, 13);
             this.lbMedecin.TabIndex = 2;
             this.lbMedecin.Text = "Nombre de médecins";
             // 
             // lbRapportAnnee
             // 
             this.lbRapportAnnee.AutoSize = true;
-            this.lbRapportAnnee.Location = new System.Drawing.Point(12, 21);
+            this.lbRapportAnnee.Location = new System.Drawing.Point(9, 17);
+            this.lbRapportAnnee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbRapportAnnee.Name = "lbRapportAnnee";
-            this.lbRapportAnnee.Size = new System.Drawing.Size(211, 17);
+            this.lbRapportAnnee.Size = new System.Drawing.Size(156, 13);
             this.lbRapportAnnee.TabIndex = 1;
             this.lbRapportAnnee.Text = "Nombre de rapports par années";
             // 
             // frmStatistiques
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 536);
+            this.ClientSize = new System.Drawing.Size(471, 436);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmStatistiques";
             this.Text = "Statistiques";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
