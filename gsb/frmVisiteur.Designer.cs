@@ -30,21 +30,21 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lbVisiteur = new System.Windows.Forms.Label();
-            this.listVisiteur = new System.Windows.Forms.ListBox();
-            this.lbId = new System.Windows.Forms.Label();
-            this.lbNom = new System.Windows.Forms.Label();
-            this.lbPrenom = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtPrenom = new System.Windows.Forms.TextBox();
-            this.lbAdresse = new System.Windows.Forms.Label();
-            this.lbCp = new System.Windows.Forms.Label();
-            this.lbVille = new System.Windows.Forms.Label();
-            this.lbDateEmbauche = new System.Windows.Forms.Label();
-            this.txtAdresse = new System.Windows.Forms.TextBox();
-            this.txtCp = new System.Windows.Forms.TextBox();
-            this.txtVille = new System.Windows.Forms.TextBox();
             this.txtDateEmbauche = new System.Windows.Forms.TextBox();
+            this.txtVille = new System.Windows.Forms.TextBox();
+            this.txtCp = new System.Windows.Forms.TextBox();
+            this.txtAdresse = new System.Windows.Forms.TextBox();
+            this.lbDateEmbauche = new System.Windows.Forms.Label();
+            this.lbVille = new System.Windows.Forms.Label();
+            this.lbCp = new System.Windows.Forms.Label();
+            this.lbAdresse = new System.Windows.Forms.Label();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lbPrenom = new System.Windows.Forms.Label();
+            this.lbNom = new System.Windows.Forms.Label();
+            this.lbId = new System.Windows.Forms.Label();
+            this.listVisiteur = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -55,6 +55,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -79,147 +80,171 @@
             this.splitContainer1.Panel2.Controls.Add(this.lbNom);
             this.splitContainer1.Panel2.Controls.Add(this.lbId);
             this.splitContainer1.Panel2.Controls.Add(this.listVisiteur);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 87;
+            this.splitContainer1.Size = new System.Drawing.Size(600, 366);
+            this.splitContainer1.SplitterDistance = 70;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
             // lbVisiteur
             // 
             this.lbVisiteur.AutoSize = true;
-            this.lbVisiteur.Location = new System.Drawing.Point(337, 43);
+            this.lbVisiteur.Location = new System.Drawing.Point(253, 35);
+            this.lbVisiteur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbVisiteur.Name = "lbVisiteur";
-            this.lbVisiteur.Size = new System.Drawing.Size(121, 17);
+            this.lbVisiteur.Size = new System.Drawing.Size(90, 13);
             this.lbVisiteur.TabIndex = 0;
             this.lbVisiteur.Text = "Liste des visiteurs";
             // 
-            // listVisiteur
+            // txtDateEmbauche
             // 
-            this.listVisiteur.FormattingEnabled = true;
-            this.listVisiteur.ItemHeight = 16;
-            this.listVisiteur.Location = new System.Drawing.Point(43, 24);
-            this.listVisiteur.Name = "listVisiteur";
-            this.listVisiteur.Size = new System.Drawing.Size(664, 84);
-            this.listVisiteur.TabIndex = 0;
+            this.txtDateEmbauche.Location = new System.Drawing.Point(270, 249);
+            this.txtDateEmbauche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDateEmbauche.Name = "txtDateEmbauche";
+            this.txtDateEmbauche.ReadOnly = true;
+            this.txtDateEmbauche.Size = new System.Drawing.Size(114, 20);
+            this.txtDateEmbauche.TabIndex = 14;
             // 
-            // lbId
+            // txtVille
             // 
-            this.lbId.AutoSize = true;
-            this.lbId.Location = new System.Drawing.Point(43, 155);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(21, 17);
-            this.lbId.TabIndex = 1;
-            this.lbId.Text = "ID";
+            this.txtVille.Location = new System.Drawing.Point(368, 193);
+            this.txtVille.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVille.Name = "txtVille";
+            this.txtVille.ReadOnly = true;
+            this.txtVille.Size = new System.Drawing.Size(114, 20);
+            this.txtVille.TabIndex = 13;
             // 
-            // lbNom
+            // txtCp
             // 
-            this.lbNom.AutoSize = true;
-            this.lbNom.Location = new System.Drawing.Point(46, 196);
-            this.lbNom.Name = "lbNom";
-            this.lbNom.Size = new System.Drawing.Size(37, 17);
-            this.lbNom.TabIndex = 2;
-            this.lbNom.Text = "Nom";
+            this.txtCp.Location = new System.Drawing.Point(368, 159);
+            this.txtCp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCp.Name = "txtCp";
+            this.txtCp.ReadOnly = true;
+            this.txtCp.Size = new System.Drawing.Size(114, 20);
+            this.txtCp.TabIndex = 12;
             // 
-            // lbPrenom
+            // txtAdresse
             // 
-            this.lbPrenom.AutoSize = true;
-            this.lbPrenom.Location = new System.Drawing.Point(43, 241);
-            this.lbPrenom.Name = "lbPrenom";
-            this.lbPrenom.Size = new System.Drawing.Size(57, 17);
-            this.lbPrenom.TabIndex = 3;
-            this.lbPrenom.Text = "Prenom";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(132, 155);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(150, 22);
-            this.txtId.TabIndex = 4;
-            // 
-            // txtNom
-            // 
-            this.txtNom.Location = new System.Drawing.Point(132, 196);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(150, 22);
-            this.txtNom.TabIndex = 5;
-            // 
-            // txtPrenom
-            // 
-            this.txtPrenom.Location = new System.Drawing.Point(132, 236);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(150, 22);
-            this.txtPrenom.TabIndex = 6;
-            // 
-            // lbAdresse
-            // 
-            this.lbAdresse.AutoSize = true;
-            this.lbAdresse.Location = new System.Drawing.Point(411, 159);
-            this.lbAdresse.Name = "lbAdresse";
-            this.lbAdresse.Size = new System.Drawing.Size(60, 17);
-            this.lbAdresse.TabIndex = 7;
-            this.lbAdresse.Text = "Adresse";
-            // 
-            // lbCp
-            // 
-            this.lbCp.AutoSize = true;
-            this.lbCp.Location = new System.Drawing.Point(411, 196);
-            this.lbCp.Name = "lbCp";
-            this.lbCp.Size = new System.Drawing.Size(26, 17);
-            this.lbCp.TabIndex = 8;
-            this.lbCp.Text = "CP";
-            // 
-            // lbVille
-            // 
-            this.lbVille.AutoSize = true;
-            this.lbVille.Location = new System.Drawing.Point(411, 236);
-            this.lbVille.Name = "lbVille";
-            this.lbVille.Size = new System.Drawing.Size(34, 17);
-            this.lbVille.TabIndex = 9;
-            this.lbVille.Text = "Ville";
+            this.txtAdresse.Location = new System.Drawing.Point(368, 126);
+            this.txtAdresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAdresse.Name = "txtAdresse";
+            this.txtAdresse.ReadOnly = true;
+            this.txtAdresse.Size = new System.Drawing.Size(114, 20);
+            this.txtAdresse.TabIndex = 11;
             // 
             // lbDateEmbauche
             // 
             this.lbDateEmbauche.AutoSize = true;
-            this.lbDateEmbauche.Location = new System.Drawing.Point(216, 311);
+            this.lbDateEmbauche.Location = new System.Drawing.Point(162, 253);
+            this.lbDateEmbauche.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDateEmbauche.Name = "lbDateEmbauche";
-            this.lbDateEmbauche.Size = new System.Drawing.Size(122, 17);
+            this.lbDateEmbauche.Size = new System.Drawing.Size(94, 13);
             this.lbDateEmbauche.TabIndex = 10;
             this.lbDateEmbauche.Text = "Date D\'Embauche";
             // 
-            // txtAdresse
+            // lbVille
             // 
-            this.txtAdresse.Location = new System.Drawing.Point(490, 155);
-            this.txtAdresse.Name = "txtAdresse";
-            this.txtAdresse.Size = new System.Drawing.Size(150, 22);
-            this.txtAdresse.TabIndex = 11;
+            this.lbVille.AutoSize = true;
+            this.lbVille.Location = new System.Drawing.Point(308, 192);
+            this.lbVille.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbVille.Name = "lbVille";
+            this.lbVille.Size = new System.Drawing.Size(26, 13);
+            this.lbVille.TabIndex = 9;
+            this.lbVille.Text = "Ville";
             // 
-            // txtCp
+            // lbCp
             // 
-            this.txtCp.Location = new System.Drawing.Point(490, 196);
-            this.txtCp.Name = "txtCp";
-            this.txtCp.Size = new System.Drawing.Size(150, 22);
-            this.txtCp.TabIndex = 12;
+            this.lbCp.AutoSize = true;
+            this.lbCp.Location = new System.Drawing.Point(308, 159);
+            this.lbCp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCp.Name = "lbCp";
+            this.lbCp.Size = new System.Drawing.Size(21, 13);
+            this.lbCp.TabIndex = 8;
+            this.lbCp.Text = "CP";
             // 
-            // txtVille
+            // lbAdresse
             // 
-            this.txtVille.Location = new System.Drawing.Point(490, 238);
-            this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(150, 22);
-            this.txtVille.TabIndex = 13;
+            this.lbAdresse.AutoSize = true;
+            this.lbAdresse.Location = new System.Drawing.Point(308, 129);
+            this.lbAdresse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAdresse.Name = "lbAdresse";
+            this.lbAdresse.Size = new System.Drawing.Size(45, 13);
+            this.lbAdresse.TabIndex = 7;
+            this.lbAdresse.Text = "Adresse";
             // 
-            // txtDateEmbauche
+            // txtPrenom
             // 
-            this.txtDateEmbauche.Location = new System.Drawing.Point(360, 306);
-            this.txtDateEmbauche.Name = "txtDateEmbauche";
-            this.txtDateEmbauche.Size = new System.Drawing.Size(150, 22);
-            this.txtDateEmbauche.TabIndex = 14;
+            this.txtPrenom.Location = new System.Drawing.Point(99, 192);
+            this.txtPrenom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.ReadOnly = true;
+            this.txtPrenom.Size = new System.Drawing.Size(114, 20);
+            this.txtPrenom.TabIndex = 6;
+            // 
+            // txtNom
+            // 
+            this.txtNom.Location = new System.Drawing.Point(99, 159);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.ReadOnly = true;
+            this.txtNom.Size = new System.Drawing.Size(114, 20);
+            this.txtNom.TabIndex = 5;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(99, 126);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(114, 20);
+            this.txtId.TabIndex = 4;
+            // 
+            // lbPrenom
+            // 
+            this.lbPrenom.AutoSize = true;
+            this.lbPrenom.Location = new System.Drawing.Point(32, 196);
+            this.lbPrenom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPrenom.Name = "lbPrenom";
+            this.lbPrenom.Size = new System.Drawing.Size(43, 13);
+            this.lbPrenom.TabIndex = 3;
+            this.lbPrenom.Text = "Prenom";
+            // 
+            // lbNom
+            // 
+            this.lbNom.AutoSize = true;
+            this.lbNom.Location = new System.Drawing.Point(34, 159);
+            this.lbNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNom.Name = "lbNom";
+            this.lbNom.Size = new System.Drawing.Size(29, 13);
+            this.lbNom.TabIndex = 2;
+            this.lbNom.Text = "Nom";
+            // 
+            // lbId
+            // 
+            this.lbId.AutoSize = true;
+            this.lbId.Location = new System.Drawing.Point(32, 126);
+            this.lbId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(18, 13);
+            this.lbId.TabIndex = 1;
+            this.lbId.Text = "ID";
+            // 
+            // listVisiteur
+            // 
+            this.listVisiteur.FormattingEnabled = true;
+            this.listVisiteur.Location = new System.Drawing.Point(32, 20);
+            this.listVisiteur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listVisiteur.Name = "listVisiteur";
+            this.listVisiteur.Size = new System.Drawing.Size(499, 69);
+            this.listVisiteur.TabIndex = 0;
             // 
             // frmVisiteur
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmVisiteur";
             this.Text = "frmVisiteur";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

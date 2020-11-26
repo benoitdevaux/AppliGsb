@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace gsb
@@ -57,7 +51,7 @@ namespace gsb
         {
             ListView.SelectedIndexCollection lesIndex = this.lvMedicament.SelectedIndices;
 
-            foreach (int index in lesIndex )
+            foreach (int index in lesIndex)
             {
                 this.lvMedicament.Items.RemoveAt(index);
             }
@@ -70,7 +64,7 @@ namespace gsb
             int medecin = Int32.Parse(Manager.getMedecin(this.cbMedecins.SelectedIndex).getId());
 
             //Récupération des valeurs des champs et instanciation d'un rapport
-            Rapport nouveauRapport = new Rapport(0, DateTime.Parse(txtDate.Text), txtMotif.Text, txtBilan.Text, visiteur, medecin);        
+            Rapport nouveauRapport = new Rapport(0, DateTime.Parse(txtDate.Text), txtMotif.Text, txtBilan.Text, visiteur, medecin);
 
             //Création de l'élément grâce au manager
             Manager.CreerRapport(nouveauRapport);
@@ -85,7 +79,7 @@ namespace gsb
                 string nomMedicament = lvMedicament.Items[i].Text;
 
                 //Récupère le médicament
-                Medicament medicament = Manager.GetMedicamentById(nomMedicament);
+                Medicament medicament = Manager.GetMedicamentByName(nomMedicament);
 
                 //Récupère la quantite item[i]
                 string quantite = lvMedicament.Items[i].SubItems[1].Text;
@@ -98,11 +92,6 @@ namespace gsb
             }
 
             MessageBox.Show("Le rapport du " + txtDate.Text + " a bien été créé");
-        }
-
-        private void lvMedicament_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

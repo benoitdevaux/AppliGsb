@@ -17,11 +17,6 @@ namespace gsb
             InitializeComponent();
         }
 
-        private void frmStatistiques_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btActualiser_Click(object sender, EventArgs e)
         {
             //Réinitialise la listView
@@ -61,12 +56,6 @@ namespace gsb
                 rapports += 1;
             }
             this.txtRapport.Text = rapports.ToString();
-
-        }
-
-        private void lvRapports_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

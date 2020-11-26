@@ -108,9 +108,9 @@ namespace gsb
         }
 
         //Récupère un médicament à partir de son index
-        public static Medicament GetMedicamentById(String id)
+        public static Medicament GetMedicamentByName(String nom)
         {
-            return Passerelle.getMedicament(id);
+            return Passerelle.getMedicament(nom);
         }
 
         public static Medicament getMedicament(int index)

@@ -51,7 +51,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -92,14 +92,13 @@
             this.colRapports});
             this.lvRapports.HideSelection = false;
             this.lvRapports.Location = new System.Drawing.Point(16, 41);
-            this.lvRapports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvRapports.Margin = new System.Windows.Forms.Padding(2);
             this.lvRapports.Name = "lvRapports";
             this.lvRapports.Scrollable = false;
             this.lvRapports.Size = new System.Drawing.Size(212, 236);
             this.lvRapports.TabIndex = 11;
             this.lvRapports.UseCompatibleStateImageBehavior = false;
             this.lvRapports.View = System.Windows.Forms.View.Details;
-            this.lvRapports.SelectedIndexChanged += new System.EventHandler(this.lvRapports_SelectedIndexChanged);
             // 
             // colAnnee
             // 
@@ -114,7 +113,7 @@
             // btActualiser
             // 
             this.btActualiser.Location = new System.Drawing.Point(382, 318);
-            this.btActualiser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btActualiser.Margin = new System.Windows.Forms.Padding(2);
             this.btActualiser.Name = "btActualiser";
             this.btActualiser.Size = new System.Drawing.Size(66, 24);
             this.btActualiser.TabIndex = 8;
@@ -124,28 +123,28 @@
             // 
             // txtMedicament
             // 
-            this.txtMedicament.Enabled = false;
             this.txtMedicament.Location = new System.Drawing.Point(294, 132);
-            this.txtMedicament.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMedicament.Margin = new System.Windows.Forms.Padding(2);
             this.txtMedicament.Name = "txtMedicament";
+            this.txtMedicament.ReadOnly = true;
             this.txtMedicament.Size = new System.Drawing.Size(76, 20);
             this.txtMedicament.TabIndex = 7;
             // 
             // txtMedecin
             // 
-            this.txtMedecin.Enabled = false;
             this.txtMedecin.Location = new System.Drawing.Point(294, 66);
-            this.txtMedecin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMedecin.Margin = new System.Windows.Forms.Padding(2);
             this.txtMedecin.Name = "txtMedecin";
+            this.txtMedecin.ReadOnly = true;
             this.txtMedecin.Size = new System.Drawing.Size(76, 20);
             this.txtMedecin.TabIndex = 6;
             // 
             // txtRapport
             // 
-            this.txtRapport.Enabled = false;
             this.txtRapport.Location = new System.Drawing.Point(11, 324);
-            this.txtRapport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRapport.Margin = new System.Windows.Forms.Padding(2);
             this.txtRapport.Name = "txtRapport";
+            this.txtRapport.ReadOnly = true;
             this.txtRapport.Size = new System.Drawing.Size(76, 20);
             this.txtRapport.TabIndex = 5;
             // 
@@ -196,11 +195,10 @@
             this.ClientSize = new System.Drawing.Size(471, 436);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmStatistiques";
             this.Text = "Statistiques";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmStatistiques_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

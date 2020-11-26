@@ -34,8 +34,6 @@ namespace gsb
             }
         }
 
-
-
         private void listMedicaments_SelectedIndexChanged(object sender, EventArgs e)
         {
             //récupération de l'indice du médicament sélectionné

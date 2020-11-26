@@ -55,6 +55,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -79,148 +80,172 @@
             this.splitContainer1.Panel2.Controls.Add(this.txtIdMed);
             this.splitContainer1.Panel2.Controls.Add(this.lbIdMed);
             this.splitContainer1.Panel2.Controls.Add(this.listMedecin);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 565);
-            this.splitContainer1.SplitterDistance = 106;
+            this.splitContainer1.Size = new System.Drawing.Size(600, 459);
+            this.splitContainer1.SplitterDistance = 86;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
             // lbListMed
             // 
             this.lbListMed.AutoSize = true;
-            this.lbListMed.Location = new System.Drawing.Point(341, 24);
+            this.lbListMed.Location = new System.Drawing.Point(256, 20);
+            this.lbListMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbListMed.Name = "lbListMed";
-            this.lbListMed.Size = new System.Drawing.Size(129, 17);
+            this.lbListMed.Size = new System.Drawing.Size(97, 13);
             this.lbListMed.TabIndex = 0;
             this.lbListMed.Text = "Liste des médecins";
             // 
             // txtDepMed
             // 
-            this.txtDepMed.Location = new System.Drawing.Point(577, 264);
+            this.txtDepMed.Location = new System.Drawing.Point(433, 214);
+            this.txtDepMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtDepMed.Name = "txtDepMed";
-            this.txtDepMed.Size = new System.Drawing.Size(170, 22);
+            this.txtDepMed.ReadOnly = true;
+            this.txtDepMed.Size = new System.Drawing.Size(128, 20);
             this.txtDepMed.TabIndex = 14;
             // 
             // lbDepMed
             // 
             this.lbDepMed.AutoSize = true;
-            this.lbDepMed.Location = new System.Drawing.Point(456, 269);
+            this.lbDepMed.Location = new System.Drawing.Point(342, 219);
+            this.lbDepMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDepMed.Name = "lbDepMed";
-            this.lbDepMed.Size = new System.Drawing.Size(90, 17);
+            this.lbDepMed.Size = new System.Drawing.Size(68, 13);
             this.lbDepMed.TabIndex = 13;
             this.lbDepMed.Text = "Département";
             // 
             // txtSpeMed
             // 
-            this.txtSpeMed.Location = new System.Drawing.Point(577, 228);
+            this.txtSpeMed.Location = new System.Drawing.Point(433, 185);
+            this.txtSpeMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtSpeMed.Name = "txtSpeMed";
-            this.txtSpeMed.Size = new System.Drawing.Size(170, 22);
+            this.txtSpeMed.ReadOnly = true;
+            this.txtSpeMed.Size = new System.Drawing.Size(128, 20);
             this.txtSpeMed.TabIndex = 12;
             // 
             // lbSpeMed
             // 
             this.lbSpeMed.AutoSize = true;
-            this.lbSpeMed.Location = new System.Drawing.Point(453, 233);
+            this.lbSpeMed.Location = new System.Drawing.Point(340, 189);
+            this.lbSpeMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSpeMed.Name = "lbSpeMed";
-            this.lbSpeMed.Size = new System.Drawing.Size(69, 17);
+            this.lbSpeMed.Size = new System.Drawing.Size(53, 13);
             this.lbSpeMed.TabIndex = 11;
             this.lbSpeMed.Text = "Spécialité";
             // 
             // txtTelMed
             // 
-            this.txtTelMed.Location = new System.Drawing.Point(114, 387);
+            this.txtTelMed.Location = new System.Drawing.Point(86, 314);
+            this.txtTelMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelMed.Name = "txtTelMed";
-            this.txtTelMed.Size = new System.Drawing.Size(180, 22);
+            this.txtTelMed.ReadOnly = true;
+            this.txtTelMed.Size = new System.Drawing.Size(136, 20);
             this.txtTelMed.TabIndex = 10;
             // 
             // lbTelMed
             // 
             this.lbTelMed.AutoSize = true;
-            this.lbTelMed.Location = new System.Drawing.Point(40, 387);
+            this.lbTelMed.Location = new System.Drawing.Point(30, 314);
+            this.lbTelMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTelMed.Name = "lbTelMed";
-            this.lbTelMed.Size = new System.Drawing.Size(28, 17);
+            this.lbTelMed.Size = new System.Drawing.Size(22, 13);
             this.lbTelMed.TabIndex = 9;
             this.lbTelMed.Text = "Tel";
             // 
             // txtAdresseMed
             // 
-            this.txtAdresseMed.Location = new System.Drawing.Point(114, 346);
+            this.txtAdresseMed.Location = new System.Drawing.Point(86, 281);
+            this.txtAdresseMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdresseMed.Name = "txtAdresseMed";
-            this.txtAdresseMed.Size = new System.Drawing.Size(180, 22);
+            this.txtAdresseMed.ReadOnly = true;
+            this.txtAdresseMed.Size = new System.Drawing.Size(136, 20);
             this.txtAdresseMed.TabIndex = 8;
             // 
             // lbAdresseMed
             // 
             this.lbAdresseMed.AutoSize = true;
-            this.lbAdresseMed.Location = new System.Drawing.Point(40, 351);
+            this.lbAdresseMed.Location = new System.Drawing.Point(30, 285);
+            this.lbAdresseMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAdresseMed.Name = "lbAdresseMed";
-            this.lbAdresseMed.Size = new System.Drawing.Size(60, 17);
+            this.lbAdresseMed.Size = new System.Drawing.Size(45, 13);
             this.lbAdresseMed.TabIndex = 7;
             this.lbAdresseMed.Text = "Adresse";
             // 
             // txtPrenomMed
             // 
-            this.txtPrenomMed.Location = new System.Drawing.Point(114, 308);
+            this.txtPrenomMed.Location = new System.Drawing.Point(86, 250);
+            this.txtPrenomMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrenomMed.Name = "txtPrenomMed";
-            this.txtPrenomMed.Size = new System.Drawing.Size(180, 22);
+            this.txtPrenomMed.ReadOnly = true;
+            this.txtPrenomMed.Size = new System.Drawing.Size(136, 20);
             this.txtPrenomMed.TabIndex = 6;
             // 
             // lbPrenomMed
             // 
             this.lbPrenomMed.AutoSize = true;
-            this.lbPrenomMed.Location = new System.Drawing.Point(40, 313);
+            this.lbPrenomMed.Location = new System.Drawing.Point(30, 254);
+            this.lbPrenomMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPrenomMed.Name = "lbPrenomMed";
-            this.lbPrenomMed.Size = new System.Drawing.Size(57, 17);
+            this.lbPrenomMed.Size = new System.Drawing.Size(43, 13);
             this.lbPrenomMed.TabIndex = 5;
             this.lbPrenomMed.Text = "Prénom";
             // 
             // txtNomMed
             // 
-            this.txtNomMed.Location = new System.Drawing.Point(114, 265);
+            this.txtNomMed.Location = new System.Drawing.Point(86, 214);
+            this.txtNomMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomMed.Name = "txtNomMed";
-            this.txtNomMed.Size = new System.Drawing.Size(180, 22);
+            this.txtNomMed.ReadOnly = true;
+            this.txtNomMed.Size = new System.Drawing.Size(136, 20);
             this.txtNomMed.TabIndex = 4;
             // 
             // lbNomMed
             // 
             this.lbNomMed.AutoSize = true;
-            this.lbNomMed.Location = new System.Drawing.Point(40, 270);
+            this.lbNomMed.Location = new System.Drawing.Point(30, 219);
+            this.lbNomMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNomMed.Name = "lbNomMed";
-            this.lbNomMed.Size = new System.Drawing.Size(37, 17);
+            this.lbNomMed.Size = new System.Drawing.Size(29, 13);
             this.lbNomMed.TabIndex = 3;
             this.lbNomMed.Text = "Nom";
             // 
             // txtIdMed
             // 
-            this.txtIdMed.Location = new System.Drawing.Point(114, 226);
+            this.txtIdMed.Location = new System.Drawing.Point(86, 184);
+            this.txtIdMed.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdMed.Name = "txtIdMed";
-            this.txtIdMed.Size = new System.Drawing.Size(180, 22);
+            this.txtIdMed.ReadOnly = true;
+            this.txtIdMed.Size = new System.Drawing.Size(136, 20);
             this.txtIdMed.TabIndex = 2;
             // 
             // lbIdMed
             // 
             this.lbIdMed.AutoSize = true;
-            this.lbIdMed.Location = new System.Drawing.Point(40, 231);
+            this.lbIdMed.Location = new System.Drawing.Point(30, 188);
+            this.lbIdMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIdMed.Name = "lbIdMed";
-            this.lbIdMed.Size = new System.Drawing.Size(21, 17);
+            this.lbIdMed.Size = new System.Drawing.Size(18, 13);
             this.lbIdMed.TabIndex = 1;
             this.lbIdMed.Text = "ID";
             // 
             // listMedecin
             // 
             this.listMedecin.FormattingEnabled = true;
-            this.listMedecin.ItemHeight = 16;
-            this.listMedecin.Location = new System.Drawing.Point(43, 21);
+            this.listMedecin.Location = new System.Drawing.Point(32, 17);
+            this.listMedecin.Margin = new System.Windows.Forms.Padding(2);
             this.listMedecin.Name = "listMedecin";
-            this.listMedecin.Size = new System.Drawing.Size(704, 180);
+            this.listMedecin.Size = new System.Drawing.Size(529, 147);
             this.listMedecin.TabIndex = 0;
             this.listMedecin.SelectedIndexChanged += new System.EventHandler(this.listMedecin_SelectedIndexChanged);
             // 
             // frmMedecin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 565);
+            this.ClientSize = new System.Drawing.Size(600, 459);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMedecin";
             this.Text = "frmMedecin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
